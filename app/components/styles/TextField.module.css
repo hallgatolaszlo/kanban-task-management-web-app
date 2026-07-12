@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.label {
+	color: var(--label);
+}
+
+.input-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	background-color: var(--bg-body);
+	border: 1px solid var(--lines-dark);
+	outline: none;
+	height: 40px;
+	border-radius: 4px;
+	padding: 8px 16px;
+	color: var(--fg-primary);
+	width: 100%;
+}
+
+.input:hover {
+	border-color: var(--main-purple-hover);
+}
+
+.input:focus {
+	border-color: var(--main-purple);
+}
+
+.input--error {
+	border-color: var(--red) !important;
+}
+
+.error {
+	color: var(--red);
+	position: absolute;
+	right: 16px;
+}

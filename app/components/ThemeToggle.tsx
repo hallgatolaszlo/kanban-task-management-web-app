@@ -1,37 +1,42 @@
 "use client";
 
+import styles from "@/app/components/styles/ThemeToggle.module.css";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
 	const [mounted, setMounted] = useState(false);
-	const { theme, setTheme } = useTheme();
+	const { resolvedTheme, setTheme } = useTheme();
 
 	useEffect(() => setMounted(true), []);
 
 	if (!mounted) return null;
 
 	return (
-		<div style={{ display: "flex", gap: "0.5rem" }}>
-			<button
-				className="button button--secondary"
-				onClick={() => setTheme("light")}
-			>
-				Light
-			</button>
-			<button
-				className="button button--secondary"
-				onClick={() => setTheme("dark")}
-			>
-				Dark
-			</button>
-			<button
-				className="button button--secondary"
-				onClick={() => setTheme("system")}
-			>
-				System
-			</button>
-			<span className="text-muted">Current: {theme}</span>
+		<div className={styles["container"]}>
+			<Image
+				width={19}
+				height={19}
+				src="/icon-light-theme.svg"
+				alt="Light Theme Icon"
+			/>
+			<label className={styles["switch"]}>
+				<input
+					type="checkbox"
+					checked={resolvedTheme === "dark"}
+					onChange={() =>
+						setTheme(resolvedTheme === "dark" ? "light" : "dark")
+					}
+				/>
+				<span className={styles["slider"]}></span>
+			</label>
+			<Image
+				width={16}
+				height={16}
+				src="/icon-dark-theme.svg"
+				alt="Dark Theme Icon"
+			/>
 		</div>
 	);
 }

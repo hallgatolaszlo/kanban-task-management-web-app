@@ -31,6 +31,8 @@
 
 	--fg-primary: var(--black);
 	--fg-secondary: var(--medium-grey);
+
+	--label: var(--medium-grey);
 }
 
 .dark {
@@ -41,6 +43,8 @@
 
 	--fg-primary: var(--white);
 	--fg-secondary: var(--medium-grey);
+
+	--label: var(--white);
 }
 
 html {

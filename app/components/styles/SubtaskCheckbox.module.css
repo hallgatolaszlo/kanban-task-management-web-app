@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 12px;
+	background-color: var(--bg-body);
+	border-radius: 4px;
+}
+
+.container:hover {
+	background-color: rgba(99, 95, 199, 0.25);
+}
+
+.checkbox {
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	border: 1px solid var(--lines-dark);
+	accent-color: var(--main-purple);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.label.checked {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
