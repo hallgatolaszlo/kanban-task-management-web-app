@@ -1,0 +1,46 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	height: 40px;
+	border-radius: 20px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.button--primary-large {
+	height: 48px;
+	border-radius: 24px;
+}
+
+.button--primary,
+.button--primary-large {
+	background-color: var(--main-purple);
+	color: var(--white);
+}
+
+.button--primary:hover,
+.button--primary-large:hover {
+	background-color: var(--main-purple-hover);
+}
+
+.button--secondary {
+	background-color: var(--light-grey);
+	color: var(--main-purple);
+}
+
+.button--secondary:hover {
+	background-color: var(--lines-light);
+}
+
+.button--destructive {
+	background-color: var(--red);
+	color: var(--white);
+}
+
+.button--destructive:hover {
+	background-color: var(--red-hover);
+}

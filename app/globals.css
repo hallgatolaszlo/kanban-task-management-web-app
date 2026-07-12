@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	/* Colors */
+	--main-purple: #635fc7;
+	--main-purple-hover: #a8a4ff;
+
+	--black: #000112;
+
+	--very-dark-grey: #20212c;
+	--dark-grey: #2b2c37;
+	--medium-grey: #828fa3;
+	--light-grey: #f4f7fd;
+
+	--lines-dark: #3e3f4e;
+	--lines-light: #e4ebfa;
+
+	--white: #ffffff;
+
+	--red: #ea5555;
+	--red-hover: #ff9898;
+
+	/* Color Definitions for Light Mode */
+
+	--bg-body: #f4f7fd;
+	--bg-surface: #ffffff;
+
+	--fg-primary: var(--black);
+	--fg-secondary: var(--medium-grey);
+}
+
+.dark {
+	/* Color Definitions for Dark Mode */
+
+	--bg-body: #20212c;
+	--bg-surface: #2b2c37;
+
+	--fg-primary: var(--white);
+	--fg-secondary: var(--medium-grey);
+}
+
+html {
+	color-scheme: light;
+	background-color: var(--bg-body);
+}
+
+html.dark {
+	color-scheme: dark;
+	background-color: var(--bg-body);
+}
+
+.heading-xl {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.heading-l {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.heading-m {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.heading-s {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 2.4px;
+}
+
+.body-l {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 23px;
+}
+
+.body-m {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+}
